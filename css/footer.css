@@ -1,0 +1,30 @@
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-weight: normal;
+  background-color: #001935;
+  padding-right: 35px;
+}
+
+.footer > div{
+  padding-top: 28px;
+  padding-bottom: 45px;
+}
+
+.footer__developer-info > p, .footer__contacts > p{
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer__developer-info{
+  padding-left: 20px;
+}
+
+.footer__contacts{
+  text-align: left;
+  width: 50%;
+  margin-left: 50%;
+}
+

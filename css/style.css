@@ -1,0 +1,806 @@
+html{
+  height: 100%;
+}
+
+body{
+  min-height: 100%;
+  position: relative;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  color: #000;
+  background-image: url(../img/bg-body.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: top center;
+}
+
+ul, h1, h2, h3, p{
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+}
+
+/* Правила для header*/
+
+header{
+  position: relative;
+  background: url(../img/bg-header.png) no-repeat;
+  margin-bottom: 10px;
+  z-index: 10;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.parent{
+  width: 100%;
+  height: 280px;
+  position: relative;
+  z-index: 1;
+  height: 180px;
+}
+
+.son_one{
+  position: absolute;
+  width: 50%;
+  background: url(../img/bg-header-left.png) repeat-x;
+  z-index: 5;
+  height: 180px;
+  bottom: 0;
+}
+
+.son_two{
+  position: absolute;
+  width: 50%;
+  background: url(../img/bg-header-right.png) repeat-x;
+  z-index: 5;
+  height: 180px;
+  bottom: 0;
+  right: 0;
+}
+
+.header__title{
+  padding-left: 35px;
+}
+
+.header__title > p{
+  font-size: 24px;
+  padding-top: 60px;
+  padding-bottom: 32px;
+}
+
+.header__info{
+  position: absolute;
+  top: -5px;
+  right: 0;
+  text-align: center;
+}
+
+.header__info > p{
+  font-size: 14px;
+}
+
+.header__info > p:first-child{
+  padding-top: 12px;
+}
+
+
+.header__info > p:nth-child(2){
+  font-size: 16px;
+}
+
+.header__info > span{
+  font-size: 22px;
+  color: #003261;
+}
+
+.header__nav{
+  font-family: 'Ubuntu', sans-serif;
+  padding-bottom: 24px;
+}
+
+
+.header__nav ul > li{
+  display: inline-block;
+  margin-right: 60px;
+  line-height: 18px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+}
+
+.header__nav a{
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__button{
+  text-align: right;
+}
+
+.header__button-btn{
+  color: #fff;
+  background-color: #003261;
+  font-size: 18px;
+  line-height: 18px;
+  width: 160px;
+  border-radius: 8px;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.header__button-btn:hover{
+  background-color: #001f3c;
+}
+
+/* Правила для основного контента */
+
+main{
+  padding-bottom: 150px;
+  margin-top: 10px;
+}
+
+
+/* Правила для боковой панели*/
+
+.aside{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+}
+
+.aside > p{
+  color: #fff;
+  background-color: #003261;
+  font-size: 14px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+}
+
+.aside > p:hover{
+  background-color: #001f3c;
+}
+
+.aside > ul{
+  background-color: #d6d6d6;
+  list-style: none;
+  padding-left: 20px;
+}
+
+
+.aside__sub-menu > ul{
+  background-color: #c2c2c2;
+  list-style: none;
+  margin-left: -20px;
+  padding-left: 43px;
+}
+
+.aside ul > li{
+  font-size: 12px;
+}
+
+.aside ul > li > a{
+  color: #000;
+  text-decoration: none;
+}
+
+.aside ul > li > a:hover{
+  color: #0a3d6c;
+  text-decoration: underline;
+}
+
+.aside ul > li{
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+.aside__sub-menu > ul{
+  margin-top: 4px;
+}
+
+.aside .aside__sub-menu{
+  padding-bottom: 0;
+}
+
+/* Правила для контента на Главной*/
+
+section{
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-bottom: 20px;
+}
+
+.main-page__content > h1{
+  font-size: 22px;
+  text-align: center;
+  padding-top: 27px;
+}
+
+.main-page__content > p{
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+/*Правила для каталога на главной */
+
+.main-page__content-catalog-product{
+  position: relative;
+  margin-bottom: 25px;
+}
+
+
+.main-page__content-catalog-entrance{
+  width: 100%;
+  height: 208px;
+  background-color: #003261;
+  position: relative;
+}
+
+.main-page__content-catalog-entrance:hover{
+  background-color: #001f3c;
+}
+
+.main-page__content-catalog-entrance:after{
+  content: "";
+  display: block;
+  width: 146px;
+  height: 138px;
+  background-image: url(../img/icon-main-page-folder.png);
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+
+.main-page__content-catalog-product > img{
+  width: 100%;
+}
+
+.main-page__content-catalog-product > span{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 61px 10px 45px;
+  background-color: #003261;
+  font-size: 14px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  z-index: 10;
+}
+
+.main-page__content-catalog-product > span:after{
+  content: "";
+  display: block;
+  width: 6px;
+  height: 12px;
+  background-image: url(../img/icon-main-caralog-arrow.png);
+  position: absolute;
+  top: 15px;
+  right: 45px;
+}
+
+.main-page__content-catalog-product:hover span{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.main-page__content-catalog-product:hover span:after{
+  display: none;
+}
+
+
+.main-page__content-catalog-entrance > a{
+  font-size: 14px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+.main-page__content-catalog-product:hover span{
+  background-color: #001f3c;
+}
+
+/* Правила для формы на Главной*/
+
+.main-page__content-form{
+  border: 1px solid  #003261;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.main-page__content-form  p{
+  background-color: #003261;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-form__input-user-info{
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.main-form__input-user-info > input{
+  width: 90%;
+  border: 1px solid  #c2c2c2;
+  border-radius: 3px;
+  color: #000;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 6px;
+  margin-left: 46px;
+  outline: none;
+}
+
+::-webkit-input-placeholder {color:#000;}
+::-moz-placeholder          {color:#000;}  /* Firefox 19+ */
+:-moz-placeholder           {color:#000;}  /* Firefox 18- */
+:-ms-input-placeholder      {color:#000;}
+
+.main-form__button{
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.main-form__button > input{
+  width: 60%;
+  margin-left: 46px;
+  color: #fff;
+  background-color: #003261;
+  font-size: 18px;
+  line-height: 18px;
+  width: 160px;
+  border-radius: 8px;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.main-form__button > input:hover{
+  background-color: #001f3c;
+}
+
+/* Правила для Преимуществ на Главной*/
+
+.main-page__advantages{
+  text-align: center;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.main-page__advantages > span{
+  font-size: 24px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  display: block;
+}
+
+.main-page__advantages-purse, .main-page__advantages-check_mark{
+  padding-top: 150px;
+}
+
+.main-page__advantages-truck, .main-page__advantages-hands{
+  padding-top: 250px;
+}
+
+
+.main-page__advantages-purse:after, .main-page__advantages-truck:after, .main-page__advantages-check_mark:after, .main-page__advantages-hands:after{
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.main-page__advantages-purse:after{
+  background-image: url(../img/icon-main-advantages-purse.png);
+  width: 170px;
+  height: 163px;
+}
+
+.main-page__advantages-truck:after{
+  background-image: url(../img/icon-main-advantages-truck.png);
+  width: 170px;
+  height: 163px;
+}
+
+.main-page__advantages-check_mark:after{
+  background-image: url(../img/icon-main-advantages-check_mark.png);
+  width: 170px;
+  height: 163px;
+}
+
+.main-page__advantages-hands:after{
+  background-image: url(../img/icon-main-advantages-hands.png);
+  width: 170px;
+  height: 163px;
+}
+
+/* Правила для предложений на Главной*/
+
+.main-page__suggestion{
+  padding-bottom: 15px;
+}
+
+.main-page__suggestion > span{
+  font-size: 22px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+}
+
+.main-page__suggestion > ul{
+  list-style: none;
+}
+
+.main-page__suggestion > ul > li{
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* Правила для 404.html */
+
+.crash-page__content{
+  position: relative;
+}
+
+.crash-page__content img{
+  margin: 0 auto;
+}
+
+
+.crash-page__content-title{
+  font-size: 28px;
+  color: #001a45;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.crash-page__content-description{
+  font-size: 17px;
+  color: #30353b;
+  font-family: 'Ubuntu', sans-serif;
+  padding-bottom: 40px;
+}
+
+.crash-page__content-choice{
+  font-size: 14px;
+  color: #30353b;
+  font-family: 'Ubuntu', sans-serif;
+  padding-bottom: 30px;
+}
+
+.crash-page__content-choice > a{
+  color: #001a45;
+}
+
+.crash-page__content > p, span, img{
+  text-align: center;
+}
+
+.crash-page__content-first-title{
+  font-size: 28px;
+  color: #001a45;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Правила для Каталога */
+
+.catalog__content  h1{
+  font-size: 22px;
+  color: #000;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.catalog__content-product-description > span{
+  font-size: 22px;
+  display: block;
+  text-align: center;
+  padding-bottom: 2px;
+}
+
+.catalog__content-product-description > p{
+  font-size: 14px;
+}
+
+.catalog__content-product-img img{
+  width: 100%;
+}
+
+.catalog__content-btn{
+  text-align: right;
+}
+
+.catalog__content-btn input{
+  text-align: center;
+  color: #fff;
+  background-color: #003261;
+  font-size: 18px;
+  line-height: 18px;
+  width: 160px;
+  border-radius: 8px;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.catalog__content-btn input:hover{
+  background-color: #001f3c;
+}
+
+.catalog__content-price > p{
+  font-size: 22px;
+  text-align: center;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
+.catalog__content-price-table th, tr{
+  text-align: center;
+  font-size: 14px;
+}
+
+.catalog__content-price-table tr{
+  font-weight: normal;
+}
+
+.catalog__content-price-table th{
+  width: 38%;
+}
+
+.catalog__content-price-table{
+  border: 1px solid  #000;
+}
+
+.catalog__content-price-table th, td, tr{
+  border: 1px solid  #000;
+}
+
+.catalog__content-price-table th, td{
+  padding: 5px;
+}
+
+.catalog__content-price-table th:nth-child(2){ width: 24%;}
+
+
+.catalog__content-info > span{
+  display: block;
+  color: #00162b;
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.catalog__content-info > p{
+  font-size: 14px;
+  color: #00162b;
+  padding-bottom: 20px;
+}
+
+/* Правила для футера */
+
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-weight: normal;
+  background-color: #001935;
+  padding-right: 35px;
+}
+
+.footer > div{
+  padding-top: 28px;
+  padding-bottom: 45px;
+}
+
+.footer__developer-info > p, .footer__contacts > p{
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer__developer-info{
+  padding-left: 20px;
+}
+
+.footer__contacts{
+  text-align: left;
+  width: 50%;
+  margin-left: 50%;
+}
+
+
+/* Анимация каталога га Главной */
+
+
+.eff-1-2 {
+  height: 208px;
+  overflow: hidden;
+}
+
+.eff-1-2 .caption {
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  -o-transition: all 0.3 cubic-bezier(0.4, 0, 1, 1) 0s;
+  -moz-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -ms-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+}
+
+
+.eff-1-2:hover .caption {
+    left: 0px;
+}
+
+.eff-1-2 .caption > ul{
+    text-align: center;
+    list-style: none;
+    padding-top: 50px;
+}
+
+.eff-1-2 .caption > ul > li > a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.eff-1-2 .caption > ul > li > a:hover{
+    color: #2f577f;
+    text-decoration: underline;
+}
+
+/* Адаптив мод смарты */
+
+@media (max-width: 600px) {
+
+    .main-page__advantages{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .main-form__input-user-info > input{
+        width: 58%;
+    }
+
+    .main-page__advantages-purse, .main-page__advantages-check_mark,.main-page__advantages-truck, .main-page__advantages-hands{
+        padding: 90px;
+    }
+
+    section{
+        padding-bottom: 135px;
+    }
+
+    .main-page__content-form{
+        text-align: center;
+    }
+
+    .main-form__input-user-info > input{
+        margin: 0;
+    }
+
+    .main-form__button > input{
+        margin: 0;
+    }
+
+    footer{
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .footer__developer-info{
+        padding-bottom: 30px;
+    }
+
+    .footer__contacts{
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .main-page__content-catalog-entrance{
+        margin-bottom: 30px;
+    }
+
+    header{
+        width: 100%;
+        text-align: center;
+        background-image: none;
+    }
+
+    .son_one, .son_two{
+        display: none;
+    }
+
+    main{
+        margin-top: 350px;
+    }
+
+    .header__title{
+        padding: 0;
+        background-color: #abb0b7;
+        opacity: 0.7;
+    }
+
+    .header__info{
+        position: static;
+        background-color: #ffffff;
+        opacity: 0.7;
+    }
+
+    .header__button{
+        text-align: center;
+    }
+
+    .header__nav ul > li{
+      display: block;
+        margin: 0;
+    }
+
+    .header__nav{
+        padding-top: 41px;
+        background-color: #234b72;
+        opacity: 0.7;
+    }
+
+    .header__button{
+        display: none;
+
+    }
+
+    body{
+        -webkit-background-size: auto;
+        background-size: auto;
+    }
+
+    .catalog__content-price-table th{
+        width: 33.3%;
+    }
+
+    .catalog__content-product-img img, .catalog__content-product-description > p, .catalog__content-product-description > p{
+        padding-bottom: 20px;
+    }
+
+    .catalog__content-btn{
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,133 @@
+header{
+  /*position: relative;
+  background-image: url(../img/bg-header.png);
+  margin-bottom: 10px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 100%;*/
+
+  position: relative;
+  /*background: url(../img/bg-header.png) no-repeat;*/
+  background: url(../img/bg-header.png) no-repeat;
+
+  margin-bottom: 10px;
+  /*-webkit-background-size: cover;*/
+  /*background-size: cover;*/
+  /*background-position: 100%;*/
+  z-index: 10;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.parent{
+  width: 100%;
+  height: 280px;
+  position: relative;
+  z-index: 1;
+  height: 180px;
+  /*overflow: hidden;*/
+
+}
+
+.son_one{
+  position: absolute;
+  width: 50%;
+  /*background: url(../img/bg-header-left.png) repeat-x;*/
+  background: url(../img/bg-header-left.png) repeat-x;
+
+  z-index: 5;
+  height: 180px;
+  bottom: 0;
+}
+
+.son_two{
+  position: absolute;
+  width: 50%;
+  /*background: url(../img/bg-header-right.png) repeat-x;*/
+  background: url(../img/bg-header-right.png) repeat-x;
+  z-index: 5;
+  height: 180px;
+  bottom: 0;
+  right: 0;
+}
+
+.header__title{
+  padding-left: 35px;
+}
+
+.header__title > p{
+  font-size: 24px;
+  padding-top: 60px;
+  padding-bottom: 32px;
+}
+
+.header__info{
+  position: absolute;
+  top: -5px;
+  right: 0;
+  text-align: center;
+}
+
+.header__info > p{
+  font-size: 14px;
+}
+
+.header__info > p:first-child{
+  padding-top: 12px;
+}
+
+
+.header__info > p:nth-child(2){
+  font-size: 16px;
+}
+
+.header__info > span{
+  font-size: 22px;
+  color: #003261;
+}
+
+.header__nav{
+  font-family: 'Ubuntu', sans-serif;
+  padding-bottom: 24px;
+}
+
+
+.header__nav ul > li{
+  display: inline-block;
+  margin-right: 60px;
+  line-height: 18px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+}
+
+.header__nav a{
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__nav a:hover{
+  color: #010101;
+  text-decoration: underline;
+}
+
+
+.header__button{
+  text-align: right;
+}
+
+.header__button-btn{
+  color: #fff;
+  background-color: #003261;
+  font-size: 18px;
+  line-height: 18px;
+  width: 160px;
+  border-radius: 8px;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.header__button-btn:hover{
+  background-color: #001f3c;
+}

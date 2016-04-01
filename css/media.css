@@ -1,0 +1,123 @@
+@media (max-width: 600px) {
+
+    .main-page__advantages{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .main-form__input-user-info > input{
+        width: 58%;
+    }
+
+    .main-page__advantages-purse, .main-page__advantages-check_mark,.main-page__advantages-truck, .main-page__advantages-hands{
+        padding: 90px;
+    }
+
+    section{
+        padding-bottom: 135px;
+    }
+
+    .main-page__content-form{
+        text-align: center;
+    }
+
+    .main-form__input-user-info > input{
+        margin: 0;
+    }
+
+    .main-form__button > input{
+        margin: 0;
+    }
+
+    footer{
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .footer__developer-info{
+        padding-bottom: 30px;
+    }
+
+    .footer__contacts{
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .main-page__content-catalog-entrance{
+        margin-bottom: 30px;
+    }
+
+    header{
+        width: 100%;
+        text-align: center;
+        background-image: none;
+    }
+
+    .son_one, .son_two{
+        display: none;
+    }
+
+    main{
+        margin-top: 350px;
+    }
+
+    .header__title{
+        padding: 0;
+        background-color: #abb0b7;
+        opacity: 0.7;
+    }
+
+    .header__info{
+        position: static;
+        background-color: #ffffff;
+        opacity: 0.7;
+    }
+
+    .header__button{
+        text-align: center;
+    }
+
+    .header__nav ul > li{
+      display: block;
+        margin: 0;
+    }
+
+    .header__nav{
+        padding-top: 41px;
+        background-color: #234b72;
+        opacity: 0.7;
+    }
+
+    .header__button{
+        /*position: relative;
+        top: -255px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: #ffffff;
+        z-index: 10;
+        opacity: 0.7;*/
+        display: none;
+
+    }
+
+    body{
+        -webkit-background-size: auto;
+        background-size: auto;
+    }
+
+    .catalog__content-price-table th{
+        width: 33.3%;
+    }
+
+    .catalog__content-product-img img, .catalog__content-product-description > p, .catalog__content-product-description > p{
+        padding-bottom: 20px;
+    }
+
+    .catalog__content-btn{
+        text-align: center;
+    }
+
+}
